@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  display: grid;
+  place-items: center;
+  line-height: 1;
+  font-family: Montserrat;
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 1.8rem 0.9rem;
+  border-radius: 0.9rem;
+  /* width: 95%; */
+  max-width: 56.8rem;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.img-mobile {
+  width: 100%;
+  display: block;
+}
+
+.img-desktop {
+  display: none;
+  /* display: block; */
+}
+
+.text-box {
+  padding: 2rem;
+}
+
+.sub-heading {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  color: hsl(228, 12%, 48%);
+  padding-top: 1rem;
+  margin-bottom: 1.3rem;
+  font-weight: 500;
+}
+
+.heading-primary {
+  font-family: fraunces;
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 1.3rem;
+  color: hsl(212, 21%, 14%);
+}
+
+.text {
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+  color: hsl(228, 12%, 48%);
+}
+
+.price-box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+.promo-price {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+
+.price {
+  font-size: 2rem;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 1.6rem 2.2rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 1.2rem;
+}
+
+.btn:hover,
+.btn:active {
+  font-weight: 700;
+  background-color: hsl(158, 35%, 19%);
+  transform: translateY(2px);
+}
+
+.cart {
+  margin-left: 1rem;
+  font-weight: 700;
+}
+
+/**********************************************/
+/* Media Queries for screen sizes above 768px */
+/**********************************************/
+
+@media (min-width: 48em) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
+    max-width: 69rem;
+  }
+
+  .img-mobile {
+    display: none;
+  }
+
+  .img-desktop {
+    width: 100%;
+    display: block;
+    /* height: 100%; */
+  }
+
+  .text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+  }
+}
